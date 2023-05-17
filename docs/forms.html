@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Forms</title>
+</head>
+<body>
+    <div>Forms</div>
+        <div>
+            <form action="index.html">
+            <div>
+                Check First : <input type="checkbox" name="my checkfirst" checked>
+                <!--기초값으로 고정 시켜놓을 때 checked를 사용-->
+                Check Second : <input type="checkbox" name="my checksecond">
+                <label for="idcheckthird">Label Check Third :</label> 
+                <!--label은 input과 텍스트를 묶을때 사용-->
+                <input type="checkbox" name="my checkthird" id="idcheckthird">
+                <!--name은 원격으로 사용할때 필요함, form안에서 유니크 한것 전체적으로 유니크하지 않음-->
+            </div>
+            <div>
+                Hidden First : <input type="hidden" name="my hiddenfirst" value="2">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+            </form>
+        </div>
+        <hr>
+
+        <div>
+            <form action="index.html"><!--action은 업무(파일)주소-->
+            <div>
+                First Name : <input type="text" name="first">
+            </div>
+            <div>
+                Second Name :<input type="text" name="second">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+            <!--참고 https://www.w3schools.com/html/html_form_input_types.asp-->
+            </form>
+        </div>
+        <hr><!--hr은 라인긋기-->
+
+        <div>
+            <form action="main.html">
+            검색 : <input type="text" name="search">
+            <input type="submit">
+            </form>
+        </div>
+        <hr>
+
+        <div>
+            <form action="index.html">
+            <div>
+                Email : <input type="email" name="my email" value="estskyway@gmail.com">
+            </div>
+            <div>
+                Password : <input type="password" name="my password">
+            </div>
+            <div>
+                Date : <input type="date" name="my date" value="2023-05-16">
+            </div>
+            <div>
+                File : <input type="file" name="my file">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+            </form>
+        </div>
+        <hr>
+
+        <div>
+        <form action="main.html">
+            First Name : <input type="text" name="first">
+        </div>
+        <div>
+            <div>Contents :</div>
+            <textarea name="my Contents" id="" cols="30" rows="10">입력하는 곳입니다.</textarea>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+        </form>
+        
+        <hr>
+</body>
+ 
+</html>

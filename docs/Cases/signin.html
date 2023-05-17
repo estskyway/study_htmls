@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--*퀘스트
+- 파일 이름 signin.html
+- Sign in 클릭 -> url : password=1234&emailAddress=otter@yojulab.com
+- Forgot password -> links.html
+- Register -> lists.html-->
+<body>
+    <h3>
+    <div> 
+        Typical sign in / login form with additional register buttons.
+    </div>
+    <div>&nbsp;</div>
+
+
+    <form action="../index.html">
+        <div>
+            <input type="email" name="emailAddress" id="adress"> 
+            <label for="adress">Email address</label>
+        </div>
+        <div>
+            <input type="password" name="password" id="secret"> 
+            <label for="secret">Password</label>
+        </div>
+        <div>
+           <input type="checkbox" name="rememberme" id="me"> 
+           <label for="me">Remember me</label>
+        </div>
+        <div>
+            <a href="../links.html">
+                <span style="color: blue">Forgot password?
+                </span>
+            </a>
+        </div>
+        <div>
+            <input type="submit" name="submit" value="Sign in">
+        </div>
+        <div>&nbsp;</div>
+        <div>
+            Not a member? 
+            <a href="../lists.html">
+                <span style="color: blue"> Register
+                </span>
+            </a>
+        </div>
+    </form>
+    </h3>
+</body>
+</html>
